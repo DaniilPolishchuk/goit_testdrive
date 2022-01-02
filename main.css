@@ -2,6 +2,9 @@
     --theme-accent:#FFC700;
     --theme-main:#FFFFFF;
     --theme-bg:#222527;
+    --theme-accent-light:#4B526A;
+    --theme-main-light:#15141D;
+    --theme-bg-light:#222527;
 }
 html,body{
     
