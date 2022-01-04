@@ -56,7 +56,7 @@ html,body{
     /* background-color: black; */
     height: 100%;
     width: 100%;
-    background-image: url(../goit_testdrive/img/space.jpg);
+    background-image: url(img/space.jpg);
     background-size: cover;
     position: relative;
     font-family: 'Montserrat',sans-serif;
