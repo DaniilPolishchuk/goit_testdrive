@@ -3,13 +3,14 @@
     --theme-accent:#FFC700;
     --theme-main:#FFFFFF;
     --theme-bg:#222527;
-    --theme-modal-bg:#E5E5E5;
+    --theme-modal-bg:rgb(239 236 236 / 40%);
+    --theme-btn-text:#060803;
 
 
     /* light theme */
-    --theme-accent-light:#4B526A;
+    /* --theme-accent-light:#4B526A;
     --theme-main-light:#15141D;
-    --theme-bg-light:#222527;
+    --theme-bg-light:#222527; */
 }
 html,body{
     
@@ -19,11 +20,15 @@ html,body{
 /* body{font-family: 'Montserrat',sans-serif;} */
 
 .header{
+    width: 100%;
     padding: 32px 0px 72px 0px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
+
+
+
 .about-social{
     display: flex;
     flex-direction: column;
@@ -104,6 +109,7 @@ html,body{
     background: var(--theme-accent);
     border-radius: 38px;
     cursor: pointer;
+    color:var(--theme-btn-text) ;
 }
 
 .about-description{
@@ -202,7 +208,7 @@ html,body{
     color: var(--theme-main);
 }
 /* ******************************** */
-#codex{
+.codex{
     /* height: 100%; */
     width: 100%;
     background-image: url(../goit_testdrive/img/space.jpg);
@@ -271,95 +277,6 @@ html,body{
     padding-bottom:70px;
 }
 
-/* add toogle swich */
-.switch {
-    position: relative;
-    display: inline-block;
-    width: 36px;
-    height: 20px;
-  }
-  
-  /* Hide default HTML checkbox */
-  .switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
-  
-  /* The slider */
-  .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: black;
-    -webkit-transition: .4s;
-    transition: .4s;
-    
-  }
-  
-  .slider:before {
-    position: absolute;
-    content: "";
-    height: 8px;
-    width: 8px;
-    left: 4px;
-    bottom: 4px;
-    background-color:var(--theme-accent);
-    -webkit-transition: .4s;
-    transition: .4s;
-  }
-  
-  input:checked + .slider {
-    background-color: white;
-  }
-  
-  input:focus + .slider {
-    box-shadow: 0 0 1px white;
-  }
-  
-  input:checked + .slider:before {
-    -webkit-transform: translateX(16px);
-    -ms-transform: translateX(16px);
-    transform: translateX(16px);
-  }
-  
-  /* Rounded sliders */
-  .slider.round {
-    border-radius: 10px;
-    border: 2px solid var(--theme-accent);
-  }
-  
-  .slider.round:before {
-    border-radius: 50%;
-  }
-.theme-name{
-    color: var(--theme-main);
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
-    padding-left: 12px;
-    padding-right: 12px;
-}
-
-.theme{
-    display: flex;
-    flex-direction: row;
-}
-/* *************************************** */
-/* .toggle--checkbox {
-    display: none;
-}
-.toggle--checkbox:checked {
-    /** This will all flip from sun to moon **/
-    /** Change the label color **/
-
-
-/* ************************************** */
-
 .modal-container{
     position: fixed;
     top:0;
@@ -402,6 +319,9 @@ html,body{
     border: 0;
     outline: 0;
     cursor: pointer;
+}
+.close-icon svg{
+    fill:var(--theme-main);
 }
 
 .modal-form-title{
@@ -463,7 +383,7 @@ html,body{
     border: 0;
     outline: 0;
     margin-top: 40px;
-
+    color:var(--theme-btn-text);
     padding: 16px 32px 16px 32px;
     background: var(--theme-accent);
     border-radius: 38px;
@@ -515,4 +435,13 @@ html,body{
     line-height: 24px;
     text-align: center;
     margin-bottom: 48px;
+}
+
+.about--light, 
+.codex--light {
+    background-image: url("../goit_testdrive/img/stardust.jpg");
+}
+
+.logo svg{
+    fill: var(--theme-accent);
 }
