@@ -5,17 +5,21 @@
     <meta http-equiv="X-UA-Copatible" content="IE=enge">
     <meta name="viewpoint" content="width=device-width, initial-scale=1.0"> 
 
+    <!-- add style -->
     <link rel="stylesheet" href="reset.css"> 
     <link rel="stylesheet" href="main.css">  
     <link rel="stylesheet" href="switcher/switcher.css">
 
     <title>Dart Vader</title>
+    <link rel="shortcut icon" href="img/icons/darth-vader.png" type="image/png">
 
+    <!-- add font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
  <section class="about">
     <img src="img/death-star.png" alt="death star" id="death-star"> 
     <img src="img/darth-vader.png" alt="dart vader" id="dart-vader">
@@ -75,6 +79,7 @@
         
     </div>
  </section>
+
  <section id="achivment">
     <div class="container">
         <p class="achivment-name">Профессиональные и личные достижения</p>
@@ -144,6 +149,7 @@
         </div>
     </div>
  </section>
+
  <section class="codex">
     <div class="container">
         <div class="codex-content">
@@ -165,6 +171,7 @@
         </div>
     </div>
  </section>
+
  <section id="footer">
     <div class="container">
         <div  id="footer-content">
@@ -196,9 +203,8 @@
     </div> 
  </section>
 
-
  <div class="modal-container" id="modal-form">
-     <form action="#" class="modal-form">
+     <form action="#" class="modal-form" netlify>
         <button class="close-icon" id="modal-form-close"><svg width="14" height="14" viewBox="0 0 14 14" fill="white" xmlns="http://www.w3.org/2000/svg">
             <path d="M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z" />
             </svg>
@@ -220,7 +226,7 @@
      </form>
  </div>
 
-  <div class="modal-container" id="modal-success">
+ <div class="modal-container" id="modal-success">
     <div class="modal-success">
         <button class="close-icon" id="modal-success-close">
             <svg width="14" height="14" viewBox="0 0 14 14" fill="white" xmlns="http://www.w3.org/2000/svg">
@@ -241,7 +247,10 @@
     </div>
   </div>
 
+
+  <!-- add scripts -->
   <script src="../goit_testdrive/form.js"></script>
   <script src="../goit_testdrive/switcher/switcher.js"></script>
+
 </body>
 </html>

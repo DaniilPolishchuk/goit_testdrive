@@ -5,19 +5,14 @@
     --theme-bg:#222527;
     --theme-modal-bg:rgb(239 236 236 / 40%);
     --theme-btn-text:#060803;
-
-
-    /* light theme */
-    /* --theme-accent-light:#4B526A;
-    --theme-main-light:#15141D;
-    --theme-bg-light:#222527; */
 }
 html,body{
     
     width: 100%;
     height: 100%;
 }
-/* body{font-family: 'Montserrat',sans-serif;} */
+
+/* ABOUT SECTION */
 
 .header{
     width: 100%;
@@ -26,8 +21,6 @@ html,body{
     flex-direction: row;
     justify-content: space-between;
 }
-
-
 
 .about-social{
     display: flex;
@@ -38,22 +31,27 @@ html,body{
     top:36%;
 
 }
+
 .social-link{
     margin-bottom:26px;
 }
+
 .social-link svg {
     fill:var(--theme-accent);
 }
+
 .container{
     max-width: 1170px;
     margin: 0 auto;
     position: relative;
 }
+
 .about-content{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
+
 .about {
     /* background-color: black; */
     height: 100%;
@@ -64,14 +62,7 @@ html,body{
     font-family: 'Montserrat',sans-serif;
     overflow: hidden;
 }
-/* .main{
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
-    color: #FFFFFF;
-} */
+
 .about-name{
     font-family: Montserrat;
     font-style: italic;
@@ -82,12 +73,14 @@ html,body{
     margin-bottom: 24px;
     color:var(--theme-accent);
 }
+
 .about-profession{
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 16px;
     color: var(--theme-main);
 }
+
 .about-positions{
     font-size: 16px;
     line-height: 24px;
@@ -149,8 +142,10 @@ html,body{
     bottom: -96px;
     opacity: 0.4;
 }
+/* #####################################*/
 
-/* ************************************** */
+/* ACHIVMENT SECTION */
+
 #achivment{
     background-color: var(--theme-bg);
     /* height: 100%; */
@@ -161,11 +156,13 @@ html,body{
     font-family: 'Montserrat',sans-serif;
     overflow: hidden;
 }
+
 .achivment-content{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
+
 .achivment-name{
     color: var(--theme-accent);
     font-weight: bold;
@@ -181,6 +178,7 @@ html,body{
     padding-bottom: 30px;
     padding-right: 241px ;
 }
+
 .achivment-accent{
     font-style: normal;
     font-weight: normal;
@@ -190,15 +188,7 @@ html,body{
     color: var(--theme-accent);
 
 }
-/* .toggle--checkbox:checked ~ .achivment-accent{
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
-    padding-bottom: 4px;
-    color: var(--theme-accent-light);
 
-} */
 .achivment-main{
     font-style: normal;
     font-weight: normal;
@@ -207,7 +197,10 @@ html,body{
     padding-bottom: 48px;
     color: var(--theme-main);
 }
-/* ******************************** */
+/* ################################################### */
+
+/* CODEX SECTION */
+
 .codex{
     /* height: 100%; */
     width: 100%;
@@ -237,16 +230,20 @@ html,body{
     font-size: 16px;
     line-height: 24px;
 }
+
 #codex-text-accent{
     color: var(--theme-accent);
     font-weight: bold;
 }
+
 #codex-text-main{
     padding-bottom:74px;
     padding-top: 48px;
 }
+/* ############################################## */
 
-/* ************************************************* */
+/* FOOTER SECTION */
+
 #footer{
     background-color: var(--theme-bg);
     /* height: 100%; */
@@ -259,6 +256,7 @@ html,body{
     
     
 }
+
 #footer-content{
     display: flex;
     flex-direction: column;
@@ -267,6 +265,7 @@ html,body{
     padding-top:116px;
     padding-bottom: 104px;
 }
+
 #footer-text{
     font-style: normal;
     font-weight: normal;
@@ -276,6 +275,9 @@ html,body{
     color:var(--theme-main);
     padding-bottom:70px;
 }
+/* #################################### */
+
+/* MODAL FORM */
 
 .modal-container{
     position: fixed;
@@ -320,6 +322,7 @@ html,body{
     outline: 0;
     cursor: pointer;
 }
+
 .close-icon svg{
     fill:var(--theme-main);
 }
@@ -379,7 +382,6 @@ html,body{
     /* font-size: 24px; */
 }
 .regestration-button{
-    /* position: relative; */
     border: 0;
     outline: 0;
     margin-top: 40px;
@@ -388,16 +390,15 @@ html,body{
     background: var(--theme-accent);
     border-radius: 38px;
     cursor: pointer;
-    /* padding-right: 116px;
-    padding-left:116px ; */
-    /* margin-left: 197px;
-    margin-right: 197px; */
 }
 
 .modal-active{
     opacity: 1;
     pointer-events: all;
 }
+/* ################################# */
+
+/* MODAL SUCCESS */
 
 .modal-success{
     width: 520px;
@@ -412,10 +413,9 @@ html,body{
     position: relative;
     justify-content: center;
     align-items: center;
-    /* opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.5s ease-in-out; */
+
 }
+
 .modal-success-title{
     color: var(--theme-accent);
     font-style: normal;
@@ -436,7 +436,9 @@ html,body{
     text-align: center;
     margin-bottom: 48px;
 }
+/* ############################# */
 
+/* THEME CHANGE */
 .about--light, 
 .codex--light {
     background-image: url("../goit_testdrive/img/stardust.jpg");
