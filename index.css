@@ -5,6 +5,8 @@
     --theme-bg:#222527;
     --theme-modal-bg:rgb(239 236 236 / 40%);
     --theme-btn-text:#060803;
+    --theme-moto-text:#FFF;
+
 }
 html,body{
     
@@ -12,6 +14,9 @@ html,body{
     height: 100%;
 }
 
+.body-fixed{
+    overflow: hidden;
+}
 /* ABOUT SECTION */
 
 .header{
@@ -109,6 +114,13 @@ html,body{
     font-size: 16px;
     line-height: 24px;
     color: var(--theme-main);
+    margin-top: 104px ;
+}
+
+.about-description-moto{
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--theme-moto-text);
     margin-top: 104px ;
 }
 

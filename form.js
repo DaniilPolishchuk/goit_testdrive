@@ -12,14 +12,20 @@ function closeModals(e) {
 
     modalForm.classList.remove(MODAL_ACTIVE_CLASS);
     modalSuccess.classList.remove(MODAL_ACTIVE_CLASS);
+
+    document.body.classList.remove('body-fixed');
 }
 
 function openSuccessModal() {
     modalForm.classList.remove(MODAL_ACTIVE_CLASS);
     modalSuccess.classList.add(MODAL_ACTIVE_CLASS);
 
+    document.body.classList.add('body-fixed');
+
     const modalFormClose = document.querySelector('#modal-success-close');
     modalFormClose.addEventListener('click', closeModals);
+
+    
 };
 
 
@@ -34,7 +40,7 @@ function sendUserInfo(e) {
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
     body: new URLSearchParams(formData).toString()
   }).then(openSuccessModal);
-}
+    }
 
 
 callFormBtn.addEventListener('click', function () {
@@ -44,4 +50,6 @@ callFormBtn.addEventListener('click', function () {
     modalFormClose.addEventListener('click', closeModals);
 
     form.addEventListener('submit', sendUserInfo);
+
+    document.body.classList.add('body-fixed');
 });
