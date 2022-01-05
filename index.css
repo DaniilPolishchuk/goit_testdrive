@@ -453,7 +453,7 @@ html,body{
 /* THEME CHANGE */
 .about--light, 
 .codex--light {
-    background-image: url("../goit_testdrive/img/stardust.jpg");
+    background-image: url("img/stardust.jpg");
 }
 
 .logo svg{
